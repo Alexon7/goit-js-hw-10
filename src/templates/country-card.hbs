@@ -1,0 +1,16 @@
+<div class='country'>
+  <div class='country_topic'>
+    <img src='{{flags.svg}}' width='90' alt='{{name.official}} flag' />
+    <h2 class='country_title'>{{name.official}}</h2>
+  </div>
+  <div class='country_info'>
+    <p class='country_info-description'><strong>Capital:
+      </strong>{{capital}}</p>
+    <p class='country_info-description'><strong>Population: </strong>
+      {{population}}</p>
+    <p class='country_info-description'><strong>Languages: </strong>{{#each
+        languages
+      }}{{#if @index}}, {{/if}}<span>{{this}}</span>{{/each}}</p>
+
+  </div>
+</div>
